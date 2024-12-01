@@ -1,0 +1,400 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('fondo.jpg'); /* Imagen de fondo */
+    background-repeat: repeat; /* Repite la imagen en ambas direcciones */
+    background-position: top left; /* Empieza desde la esquina superior izquierda */
+    background-size: auto; /* Mantiene el tamaño original de la imagen */
+    color: #333;
+    text-align: justify;
+}
+
+
+/* Contenedor principal */
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo del header y banner */
+header {
+    background-color: #fff;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+header .banner img {
+    width: 100%;
+    height: auto;
+}
+
+/* Navegación */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #4caf50;
+}
+
+/* Títulos estilo "Ejes de Acción" */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4caf50;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Sección ¿QUIÉNES SOMOS? */
+#quienes-somos {
+    padding: 40px 0;
+}
+
+#quienes-somos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4caf50;
+}
+
+#quienes-somos .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#quienes-somos .text {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#quienes-somos .image-carousel {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 8px;
+    height: 430px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#quienes-somos .image-carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+#quienes-somos .image-carousel img.active {
+    opacity: 1;
+}
+
+/* Sección Decreto */
+#decreto {
+    padding: 40px 0;
+    background-image: url('fondo.jpg'); /* Imagen de fondo */
+    background-repeat: repeat; /* Repetir la imagen como un patrón */
+    background-position: top left; /* Comienza desde la esquina superior izquierda */
+    background-size: auto; /* Mantener el tamaño original de la imagen */
+    text-align: justify;
+}
+
+#decreto h2 {
+    color: #4caf50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#decreto p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#decreto .text-box {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    max-width: 100%;
+}
+
+.btn-download {
+    display: flex; /* Activa el modelo flexbox */
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.btn-download:hover {
+    background-color: #388e3c;
+}
+
+
+/* Sección Integrantes */
+#integrantes {
+    padding: 40px 0;
+    background-image: url('fondo.jpg'); /* Imagen de fondo */
+    background-repeat: repeat; /* Repetir la imagen como un patrón */
+    background-position: top left; /* Comienza desde la esquina superior izquierda */
+    background-size: auto; /* Mantener el tamaño original de la imagen */
+}
+
+#integrantes h2 {
+    color: #4caf50;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Contenedor de columnas */
+.integrantes-columns {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.column {
+    flex: 1;
+    min-width: 300px;
+    max-height: 300px; /* Altura máxima para la columna */   
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos de las columnas */
+.column h3 {
+    text-align: center;
+    color: #4caf50;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    font-weight: bold;
+    letter-spacing: 1px; /* Espaciado entre letras para un diseño más limpio */
+    border-bottom: 2px solid #4caf50; /* Línea decorativa debajo del título */
+    padding-bottom: 5px; /* Espacio entre el texto y la línea decorativa */
+}
+
+/* Ajuste específico para las listas */
+.column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Elimina márgenes para evitar barras adicionales */
+    max-height: 100%; /* Asegura que la lista no exceda el contenedor */
+    overflow-y: visible; /* La barra se maneja en el contenedor principal */
+}
+
+.column ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    font-size: 1em; /* Ajusta el tamaño del texto de los elementos */
+}
+
+.column ul li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #4caf50;
+}
+
+
+/* Ejes de Acción */
+#ejes-de-accion {
+    padding: 40px 0;
+}
+
+#ejes-de-accion h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4caf50;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-link {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.tab-link:hover,
+.tab-link.active {
+    background-color: #45a049;
+}
+
+.tab-content {
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Estilo para el contenido con imágenes */
+#ejes-de-accion .content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#ejes-de-accion .content img {
+    flex: 1;
+    width: 100%; /* Ocupa todo el espacio disponible dentro de su contenedor */
+    max-width: 50%; /* La imagen ocupará hasta el 50% del contenedor principal */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#ejes-de-accion .content .text {
+    flex: 1;
+    max-width: 50%; /* El texto ocupará hasta el 50% del contenedor principal */
+}
+
+#ejes-de-accion .content .text h3 {
+    color: #4caf50;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 2em; /* Incrementado para hacer los títulos más grandes */
+    text-align: center; /* Centra los títulos de las mesas */
+}
+
+
+#ejes-de-accion .content .text p {
+    text-align: justify;
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+
+
+
+
+
+/* Sección Proyectos */
+#proyectos {
+    padding: 40px 0;
+    background-color: #f4f4f9;
+}
+
+#proyectos h2 {
+    color: #4caf50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Slider */
+
+/* Slider */
+.slider {
+    overflow: hidden; /* Oculta los elementos que se salen del contenedor */
+    position: relative;
+    cursor: grab; /* Cambia el cursor al pasar sobre el slider */
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.3s ease-in-out; /* Animación suave al deslizar */
+    will-change: transform; /* Mejora el rendimiento durante la animación */
+}
+
+.slider-item {
+    flex: 0 0 25%; /* Cada item ocupa el 25% del ancho (4 items por fila) */
+    max-width: 25%; /* Limita el ancho máximo al 25% del slider */
+    text-align: center; /* Centra el contenido dentro del item */
+    padding: 10px;
+    box-sizing: border-box; /* Incluye el padding en el tamaño total del item */
+}
+
+.slider-item img {
+    width: 100%; /* Ocupará todo el ancho disponible del contenedor */
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Recorta las imágenes para que se ajusten al contenedor sin deformarse */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras para un mejor diseño */
+    transition: transform 0.3s ease; /* Añade una animación al hover */
+}
+
+.slider-item img:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+.slider-item p {
+    margin-top: 10px;
+    font-size: 1rem; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    color: #4caf50; /* Color del texto */
+}
+
+
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}

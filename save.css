@@ -1,0 +1,316 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: justify; /* Justifica todos los textos */
+}
+
+/* Contenedor principal */
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo del header y banner */
+header {
+    background-color: #fff;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+header .banner img {
+    width: 100%;
+    height: auto;
+}
+
+/* Navegación */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #4caf50;
+}
+
+/* Títulos estilo "Ejes de Acción" */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4caf50;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Sección ¿Quiénes Somos? */
+#quienes-somos {
+    padding: 40px 0;
+}
+
+#quienes-somos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4caf50;
+}
+
+#quienes-somos .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#quienes-somos .text {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#quienes-somos .image-carousel {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 8px;
+    height: 300px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#quienes-somos .image-carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+#quienes-somos .image-carousel img.active {
+    opacity: 1;
+}
+
+
+
+/* Sección Decreto */
+#decreto {
+    padding: 40px 0;
+    background-color: #f4f4f9;
+    text-align: justify; /* Asegura que todo el texto esté justificado */
+}
+
+#decreto h2 {
+    color: #4caf50;
+    margin-bottom: 20px;
+    text-align: center; /* El título se mantiene centrado */
+}
+
+#decreto p {
+    margin-bottom: 20px;
+    text-align: justify; /* Justifica los párrafos */
+}
+
+#decreto .text-box {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: justify; /* Asegura que el contenido dentro de la caja también esté justificado */
+    max-width: 100%; /* Asegura que ocupe el ancho del contenedor */
+}
+
+.btn-download {
+    display: inline-block;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Espaciado superior para separarlo del contenido */
+}
+
+.btn-download:hover {
+    background-color: #388e3c;
+}
+
+/* Botones de "Por parte de la Gobernación de Nariño" y "Por parte de Entidades" */
+.integrantes-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    background-color: #f4f4f9;
+    position: sticky; /* Siempre visible mientras se desplaza */
+    top: 0;
+    z-index: 10;
+}
+
+.integrantes-tabs button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    flex: 1; /* Ambos botones del mismo tamaño */
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.integrantes-tabs button:hover,
+.integrantes-tabs button.active {
+    background-color: #388e3c;
+}
+
+/* Sección Integrantes */
+#integrantes {
+    padding: 40px 0;
+    background-color: #f4f4f9;
+}
+
+#integrantes h2 {
+    color: #4caf50;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Estilo de las columnas */
+/* Estilo de las columnas */
+.integrantes-columns {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.column {
+    flex: 1;
+    min-width: 300px;
+    max-height: 300px; /* Controla la altura máxima de la columna */
+    overflow-y: auto; /* Solo el contenedor principal maneja el desplazamiento */
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajuste para los títulos dentro de las columnas */
+.column h3 {
+    text-align: center;
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+/* Ajuste para las listas dentro de las columnas */
+.column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Asegura que no haya márgenes superiores/inferiores en el <ul> */
+}
+
+.column ul li {
+    margin-bottom: 10px; /* Espaciado entre elementos */
+    padding-left: 20px;
+    position: relative;
+}
+
+/* Personalización del marcador antes de cada elemento */
+.column ul li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #4caf50;
+}
+
+
+/* Sección Ejes de Acción */
+#ejes-de-accion {
+    padding: 40px 0;
+}
+
+#ejes-de-accion h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4caf50;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-link {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.tab-link:hover,
+.tab-link.active {
+    background-color: #45a049;
+}
+
+.tab-content {
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
